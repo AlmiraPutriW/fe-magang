@@ -1,0 +1,126 @@
+/* Styling utama */
+.register-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Pastikan putih merata */
+}
+
+
+
+/* Ilustrasi kiri */
+.register-left {
+    flex: 1;
+    background-color: #d7eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.register-left img {
+    width: 70%;
+    max-width: 400px;
+}
+
+/* Form kanan */
+.register-right {
+    flex: 1.8;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Judul */
+.register-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 48%;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Tombol */
+.register-btn {
+    width: 100%;
+    background: #4f46e5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background: #3b36c4;
+}
+
+/* Link */
+.login-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-text a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .register-content {
+        flex-direction: column;
+    }
+
+    .register-left {
+        display: none;
+    }
+
+    .register-right {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .form-group {
+        min-width: 100%;
+    }
+}

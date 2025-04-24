@@ -1,0 +1,97 @@
+/* Styling dasar */
+.p-6 {
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.text-red-500 {
+    color: #e53e3e;
+}
+
+/* Kalender */
+.react-calendar {
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.react-calendar__tile {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Warna kategori jadwal */
+.bg-green-200 { background-color: #bbf7d0 !important; } /* Masuk Sesuai Jam Kerja */
+.bg-gray-300 { background-color: #d1d5db !important; } /* Magang Dari Rumah */
+.bg-orange-200 { background-color: #fed7aa !important; } /* Masuk Pagi */
+.bg-blue-200 { background-color: #bfdbfe !important; } /* Masuk Siang */
+.bg-yellow-300 { background-color: #fde047 !important; } /* Masuk 07.30 - 11.00 */
+.bg-yellow-500 { background-color: #eab308 !important; } /* Masuk 11.00 - 14.30 */
+
+/* Warna hari libur */
+.bg-red-200 {
+    background-color: #e53e3e !important; /* Merah */
+    color: white !important; /* Teks putih untuk kontras */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Warna untuk angka tanggal yang termasuk hari libur atau weekend */
+.holiday-date {
+    background-color: #e53e3e !important; /* Merah */
+    color: white !important; /* Teks putih */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Legend (Keterangan Warna) dengan Tabel */
+.legend-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.legend-table th, .legend-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.legend-table th {
+    background-color: #f4f4f4;
+}
+
+.legend-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Responsivitas */
+@media (max-width: 600px) {
+    .react-calendar {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,112 @@
+.detail-laporan-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    color: #0056b3;
+}
+
+.loading, .error, .empty {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.report-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.report-table th, .report-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.report-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+.status.pending {
+    background-color: #e7b956;
+}
+
+.status.completed {
+    background-color: #45c581;
+}
+
+.status.rejected {
+    background-color: #c55469;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-approve, .btn-reject {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-approve {
+    background: #34a853;
+    color: white;
+}
+
+.btn-approve:hover {
+    background: #2c8c43;
+}
+
+.btn-reject {
+    background: #ea4335;
+    color: white;
+}
+
+.btn-reject:hover {
+    background: #c62828;
+}

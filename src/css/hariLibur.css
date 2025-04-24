@@ -1,0 +1,90 @@
+.holiday-container {
+    max-width: 600px;
+    margin: 40px auto; /* Beri jarak ke bawah */
+    padding: 20px;
+    font-family: "Arial, sans-serif";
+  }
+  
+  .holiday-title {
+    text-align: center;
+    margin-bottom: 20px; /* Menurunkan jarak */
+  }
+  
+  .holiday-input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Biar sejajar */
+    margin-bottom: 20px;
+  }
+  
+  .holiday-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .holiday-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .holiday-button:hover {
+    background-color: #218838;
+  }
+  
+  .holiday-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .holiday-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    transition: 0.3s;
+  }
+  
+  .holiday-item div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .holiday-item:hover {
+    background: #f8f9fa;
+  }
+  
+  .holiday-date {
+    font-weight: bold;
+  }
+  
+  .holiday-description {
+    color: #666;
+    margin-top: 3px; /* Tambahkan sedikit jarak */
+  }
+  
+  .holiday-delete-button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+  
+  .holiday-delete-button:hover {
+    background-color: #c82333;
+  }
+  

@@ -1,0 +1,130 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Fokus input */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5A9BF6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(90, 155, 246, 0.5);
+}
+
+/* Deskripsi lebih besar */
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Tanggal Mulai & Selesai dalam satu baris */
+.date-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.date-group .form-group {
+    width: 48%;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Gaya hanya untuk tombol di dalam form-container */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285F4;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #357ABD;
+}
+
+.form-container button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.date-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.date-group .form-group {
+    flex: 1;
+}
+
+.separator {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* Responsif */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .date-group {
+        flex-direction: column;
+    }
+
+    .date-group .form-group {
+        width: 100%;
+    }
+}

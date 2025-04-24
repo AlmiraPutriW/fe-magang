@@ -1,0 +1,78 @@
+/* Container utama */
+.admin-form-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Judul form */
+.admin-form-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input field */
+.admin-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.admin-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Tombol submit */
+.admin-submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.admin-submit-btn:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+.admin-submit-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* Notifikasi */
+.admin-form-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.admin-form-success {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

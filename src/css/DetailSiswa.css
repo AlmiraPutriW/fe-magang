@@ -1,0 +1,146 @@
+/* Warna utama */
+:root {
+    --primary-color: #3A7DFF; /* Biru elegan */
+    --secondary-color: #F9FAFD; /* Background soft */
+    --text-color: #222;
+    --border-color: #E0E6F6;
+    --hover-bg: #DCE8FF;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --danger-color: #E74C3C; /* Warna tombol kembali */
+    --danger-hover: #C0392B;
+}
+
+/* Container utama */
+.student-detail-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px var(--shadow-color);
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+
+/* Tombol Kembali (Icon Saja) */
+.btn-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--border-color);
+    color: #444;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.btn-back:hover {
+    background: var(--hover-bg);
+    transform: scale(1.1);
+}
+
+.btn-back svg {
+    font-size: 20px;
+}
+
+
+
+/* Judul */
+.student-detail-container h2 {
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Tabel data siswa */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--secondary-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px var(--shadow-color);
+}
+
+.student-table td {
+    padding: 14px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.student-table td:first-child {
+    font-weight: 600;
+    color: #444;
+    width: 40%;
+}
+
+/* Hover efek */
+.student-table tr:hover {
+    background: var(--hover-bg);
+    transition: background 0.3s ease-in-out;
+}
+
+/* Menu navigasi */
+h3 {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+/* Menu list */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.menu-list li {
+    background: var(--primary-color);
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 6px var(--shadow-color);
+}
+
+.menu-list li:hover {
+    background: #2E69E0;
+    transform: scale(1.07);
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list li {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,160 @@
+/* General Table Styling */
+.table-wrapper {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  /* Agar konten tidak tertutup navbar */
+.students-container {
+    padding: 35px 20px 20px; /* Tambahkan padding atas agar tidak tertutup */
+    background-color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .students-table th, .students-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .students-table th {
+    background-color: #f1f3f9;
+    text-align: center;
+  }
+  
+  .students-table td {
+    text-align: center;
+  }
+  
+  /* Student Avatar Styling */
+  .student-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .student-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Loading & Error Styling */
+  .students-error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.prev-button, .next-button, .page-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.prev-button:disabled, .next-button:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.page-button.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.page-button:hover:not(.active), .prev-button:hover:not(:disabled), .next-button:hover:not(:disabled) {
+    background-color: #ddd;
+}
+
+.dots {
+    padding: 8px 12px;
+    color: #666;
+}
+
+.view-button {
+    padding: 6px 12px;
+    background-color: #6eafd7; /* Warna hijau */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.view-button:hover {
+    background-color: #427a9d; /* Warna hijau lebih gelap saat hover */
+}
+
+.view-button:active {
+    background-color: #427a9d;
+    transform: scale(0.98); /* Efek klik */
+}
+
+/* Container untuk tombol aksi */
+.action-buttons {
+    display: flex;
+    gap: 8px; /* Jarak antar tombol */
+}
+
+/* Tombol Terima (Approve) */
+.btn-approve {
+    padding: 6px 12px;
+    background-color: #5ad878; /* Hijau */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.btn-approve:hover {
+    background-color: #218838; /* Hijau lebih gelap saat hover */
+}
+
+.btn-approve:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+/* Tombol Tolak (Reject) */
+.btn-reject {
+    padding: 6px 12px;
+    background-color: #fa5a6a; /* Merah */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.btn-reject:hover {
+    background-color: #c82333; /* Merah lebih gelap saat hover */
+}
+
+.btn-reject:active {
+    background-color: #bd2130;
+    transform: scale(0.98);
+}

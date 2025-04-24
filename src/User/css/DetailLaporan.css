@@ -1,0 +1,113 @@
+/* Container utama */
+.detail-laporan-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: #ffffff;
+}
+
+/* Kartu Detail */
+.detail-laporan-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.detail-laporan-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Deskripsi */
+.detail-laporan-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Informasi tambahan */
+.detail-laporan-info {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.detail-laporan-info strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Status Laporan */
+.detail-laporan-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Warna untuk status */
+.detail-laporan-approved {
+    background-color: #d4f8d4;
+    color: #2e7d32;
+}
+
+.detail-laporan-pending {
+    background-color: #ffecb3;
+    color: #ff9800;
+}
+
+.detail-laporan-rejected {
+    background-color: #f8d7da;
+    color: #d32f2f;
+}
+
+.detail-laporan-back-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.detail-laporan-back-icon:hover {
+    background-color: #e0e0e0;
+    transform: translateX(-5px);
+}
+
+.detail-laporan-back-icon svg {
+    color: #333;
+}
+
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .detail-laporan-container {
+        padding: 15px;
+    }
+
+    .detail-laporan-card {
+        padding: 20px;
+    }
+
+    .detail-laporan-description {
+        font-size: 14px;
+    }
+
+    .detail-laporan-back-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}

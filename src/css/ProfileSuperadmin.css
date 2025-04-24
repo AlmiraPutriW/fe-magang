@@ -1,0 +1,43 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #5990d8;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f7fafc;
+    font-size: 16px;
+    color: #2d3748;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #5990d8;
+    background: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
